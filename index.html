@@ -32,6 +32,12 @@
         width: 100%;
       }
 
+	 /* surcharge jumbotron */
+      #bandeau .jumbotron{
+        margin-bottom: 0px;
+        color: #259;
+      }
+
       /* Styles pour les smartphones */
       #left, #side1, #side2 {
         padding: 10px 10px 0 10px;
@@ -63,10 +69,13 @@
 
   <body>
 
-    <header>
-      <a href="#"><img src="assets/img/maison.png" alt="logo"></a>
-      <h1>La maison de l'architecte</h1>        
-    </header>
+    <div class="container-fluid">
+      <div id="bandeau" class="row">
+        <header class="jumbotron  col-md-12">
+          <a href="#" class="col-md-1 pull-left hidden-xs" ><img src="assets/img/maison.png" alt="logo"></a>
+          <h1 class="text-center col-md-10">La maison de l'architecte</h1>        
+        </header>
+      </div>
 
     <nav>
       <div id="left">
@@ -87,6 +96,7 @@
       <a class="btn btn-primary" href="#"><i class="fa fa-flickr fa-2x"></i></a>
       <a class="btn btn-primary" href="#"><i class="fa fa-spotify fa-2x"></i></a>
     </footer>
+    </div>
 
   </body>
 
