@@ -38,6 +38,11 @@
         color: #259;
       }
 
+	/* marge */
+      nav {
+        margin-bottom:30px;
+      }
+
       /* Styles pour les smartphones */
       #left, #side1, #side2 {
         padding: 10px 10px 0 10px;
@@ -77,17 +82,18 @@
         </header>
       </div>
 
-    <nav>
-      <div id="left">
-        <a href="#"><img src="assets/img/city1.jpg" alt="Nos réalisations"></a>
-      </div>
-      <div id="side1">
-        <a href="#"><img src="assets/img/side1.jpg" alt="Nos projets"></a>
-      </div>
-      <div id="side2">
-        <a href="#"><img src="assets/img/side2.jpg" alt="Notre ambition"></a>
-      </div>
-    </nav>
+     <nav class="row">
+        <div id="left" class="col-md-8 col-sm-12">
+          <a href="#"><img src="assets/img/city1.jpg" alt="Nos réalisations"></a>
+        </div>
+
+        <div id="side1" class="col-md-4 col-sm-6 col-xs-12">
+          <a href="#"><img src="assets/img/side1.jpg" alt="Nos projets"></a>
+        </div>
+        <div id="side2" class="col-md-4 col-sm-6 col-xs-12">
+          <a href="#"><img src="assets/img/side2.jpg" alt="Notre ambition"></a>
+        </div>
+      </nav>
 
     <footer>
       <a class="btn btn-primary" href="#"><i class="fa fa-twitter fa-2x"></i></a>
